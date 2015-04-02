@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<adfc-mobile-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.0">
+  <managed-bean id="__1">
+    <managed-bean-name>LocalNotificationBean</managed-bean-name>
+    <managed-bean-class>com.blogspot.lucbors.lnb.mobile.beans.LocalNotificationBean</managed-bean-class>
+    <managed-bean-scope>application</managed-bean-scope>
+  </managed-bean>
+</adfc-mobile-config>

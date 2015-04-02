@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<amx:view xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:amx="http://xmlns.oracle.com/adf/mf/amx"
+          xmlns:dvtm="http://xmlns.oracle.com/adf/mf/amx/dvt">
+  <amx:panelPage id="pp1">
+    <amx:facet name="header">
+      <amx:outputText value="Header" id="ot1"/>
+    </amx:facet>
+    <amx:facet name="primary">
+      <amx:commandButton id="cb1"/>
+    </amx:facet>
+    <amx:facet name="secondary">
+      <amx:commandButton id="cb2"/>
+    </amx:facet>
+        <amx:outputText value="Received local notification:" id="ot2"/>
+    <amx:panelLabelAndMessage label="Date" id="plam1">
+      <amx:outputText value="#{applicationScope.notificationDate}" id="ot3"/>
+    </amx:panelLabelAndMessage>
+    <amx:panelLabelAndMessage label="Message" id="plam2">
+      <amx:outputText value="#{applicationScope.notificationAlert}" id="ot4"/>
+    </amx:panelLabelAndMessage>
+    <amx:panelLabelAndMessage label="App State" id="plam3">
+      <amx:outputText value="#{applicationScope.notificationAppState}" id="ot5"/>
+    </amx:panelLabelAndMessage>
+    <amx:panelLabelAndMessage label="Payload" id="plam4">
+      <amx:outputText value="#{applicationScope.notificationPayload}" id="ot6"/>
+    </amx:panelLabelAndMessage>
+  </amx:panelPage>
+</amx:view>

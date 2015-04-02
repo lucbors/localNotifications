@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<adfmf:application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:adfmf="http://xmlns.oracle.com/adf/mf"
+                   version="1.0" name="LocalNotificationBlog" id="com.company.LocalNotificationBlog"
+                   appControllerFolder="ApplicationController"
+                   listener-class="com.blogspot.lucbors.lnb.application.LifeCycleListenerImpl">
+  <adfmf:featureReference refId="com.blogspot.lucbors.lnb.NotificationSetter" id="fr1"/>
+  <adfmf:featureReference refId="com.blogspot.lucbors.lnb.NotificationShower" id="fr2"/>
+  <adfmf:featureReference refId="com.blogspot.lucbors.lnb.NotificationCanceller" id="fr3"/>
+  <adfmf:preferences>
+    <adfmf:preferenceGroup id="ReCreateNotificationAfterCancel" label="ReCreateNotification">
+      <adfmf:preferenceBoolean id="ReCreate" label="ReCreate ?"/>
+    </adfmf:preferenceGroup>
+  </adfmf:preferences>
+</adfmf:application>

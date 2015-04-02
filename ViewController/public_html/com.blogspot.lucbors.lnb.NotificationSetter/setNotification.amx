@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<amx:view xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:amx="http://xmlns.oracle.com/adf/mf/amx"
+          xmlns:dvtm="http://xmlns.oracle.com/adf/mf/amx/dvt">
+  <amx:panelPage id="pp1">
+    <amx:facet name="header">
+      <amx:outputText value="Header" id="ot1"/>
+    </amx:facet>
+    <amx:facet name="primary">
+      <amx:commandButton id="cb1"/>
+    </amx:facet>
+    <amx:facet name="secondary">
+      <amx:commandButton id="cb2"/>
+    </amx:facet>
+    
+    <amx:inputText label="Title" id="it1" value="#{LocalNotificationBean.title}"/>
+    <amx:inputText label="Alert" id="it2" value="#{LocalNotificationBean.alert}"/>
+    <amx:inputDate label="Date" id="id1" value="#{LocalNotificationBean.date}" inputType="datetime"/>
+    <amx:inputText label="Badge" id="it3" value="#{LocalNotificationBean.badge}" inputType="number"/>
+    <amx:selectBooleanSwitch label="Sound" id="sbs1" value="#{LocalNotificationBean.sound}"/>
+    <amx:selectBooleanSwitch label="Vibration" id="sbs2" value="#{LocalNotificationBean.vibration}"/>
+    <amx:commandButton text="Add Local Notification" id="cb3"
+                       actionListener="#{LocalNotificationBean.addLocalNotification}"/>
+
+  </amx:panelPage>
+</amx:view>
