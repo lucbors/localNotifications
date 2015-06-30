@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<adfmf:features xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:adfmf="http://xmlns.oracle.com/adf/mf">
+  <adfmf:feature id="com.blogspot.lucbors.lnb.NotificationSetter" name="NotificationSetter">
+    <adfmf:content id="com.blogspot.lucbors.lnb.NotificationSetter.1">
+      <adfmf:amx file="com.blogspot.lucbors.lnb.NotificationSetter/setNotification.amx"/>
+    </adfmf:content>
+  </adfmf:feature>
+  <adfmf:feature id="com.blogspot.lucbors.lnb.NotificationShower" name="NotificationShower">
+    <adfmf:content id="com.blogspot.lucbors.lnb.NotificationShower.1">
+      <adfmf:amx file="com.blogspot.lucbors.lnb.NotificationShower/showNotification.amx"/>
+    </adfmf:content>
+  </adfmf:feature>
+  <adfmf:feature id="com.blogspot.lucbors.lnb.NotificationCanceller" name="NotificationCanceller">
+    <adfmf:content id="com.blogspot.lucbors.lnb.NotificationCanceller.1">
+      <adfmf:amx file="com.blogspot.lucbors.lnb.NotificationCanceller/cancelNotification.amx"/>
+    </adfmf:content>
+  </adfmf:feature>
+</adfmf:features>

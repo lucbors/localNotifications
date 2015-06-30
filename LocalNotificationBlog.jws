@@ -114,6 +114,10 @@
                   </hash>
                </list>
             </hash>
+            <hash n="iosDeploymentOptions">
+               <value n="debugFlag" v="false"/>
+               <value n="simulatorTarget" v="iPad Retina (iOS 8.3 - iPad Retina)"/>
+            </hash>
             <url n="jarURL" path="deploy/iOS1/iOS1.jar/"/>
             <value n="profileClass" v="oracle.adfmf.framework.dt.deploy.ios.McIosFrameworkProfile"/>
             <value n="profileName" v="iOS1"/>
@@ -154,9 +158,9 @@
          </hash>
       </hash>
       <list n="profileList">
-         <string v="LocalNotificationBlog_archive"/>
-         <string v="iOS1"/>
          <string v="Android1"/>
+         <string v="iOS1"/>
+         <string v="LocalNotificationBlog_archive"/>
       </list>
    </hash>
    <hash n="oracle.jdeveloper.model.PathsConfiguration">
@@ -174,7 +178,9 @@
             </hash>
             <hash/>
          </list>
-         <list n="url-path"/>
+         <list n="url-path">
+            <url path="src/"/>
+         </list>
       </hash>
    </hash>
    <hash n="ResourceBundleOptions">
